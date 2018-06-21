@@ -17,19 +17,19 @@ There is no Pythagorean triplet.
 
 
 #### Using O(n2). we do it through the below number of steps
-* 1) Doing the square of every element in the array
+* 1. Doing the square of every element in the array
         ```sh
              for (int i=0; i<n; i++)
                  arr[i] = arr[i]*arr[i];
         ```
-* 2) Then you sort the array in an ascending order
+* 2. Then you sort the array in an ascending order
         ```sh
            Arrays.sort(arr);
         ```
-* 3) To get a2 + b2 = c2, do following
+* 3. To get a2 + b2 = c2, do following
     i) Hava 'a' as the last element of the sorted array
     ii) Then look for  pair (b, c) in subarray between first element and ‘a’
-    iii) if no pair for 'a' is found, the repeat step (ii)
+    iii) if no pair for 'a' is found, the repeat step (3.ii)
 
         ```sh
         for (int i = n-1; i >= 2; i--){
